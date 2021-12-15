@@ -1,0 +1,22 @@
+{
+  "name": "grupo_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernoCL/grupo_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernoCL/grupo_2/issues"
+  },
+  "homepage": "https://github.com/FernoCL/grupo_2#readme"
+}

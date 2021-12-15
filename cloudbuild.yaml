@@ -1,0 +1,14 @@
+steps:
+- name: 'docker'
+  id: create-image
+  args:
+  - build
+  - -t
+  - us-docker.pkg.dev/yeripelona/pokemon/pokemon-yes
+  - .
+
+- name: 'docker'
+  id: push-image
+  args:
+  - push
+  - us-docker.pkg.dev/yeripelona/pokemon/pokemon-yes
