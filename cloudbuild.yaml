@@ -4,11 +4,11 @@ steps:
   args:
   - build
   - -t
-  - us-docker.pkg.dev/yeripelona/pokemon/pokemon-yes
+  - us-docker.pkg.dev/${PROJECT_ID}/pokemon/pokemon-yes
   - .
 
 - name: 'docker'
   id: push-image
   args:
   - push
-  - us-docker.pkg.dev/yeripelona/pokemon/pokemon-yes
+  - us-docker.pkg.dev/${PROJECT_ID}/pokemon/pokemon-yes
