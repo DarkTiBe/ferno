@@ -4,11 +4,17 @@ steps:
   args:
   - build
   - -t
-  - us-docker.pkg.dev/${PROJECT_ID}/pokemon/pokemon-yes
+  - ${_IMAGE}
   - .
 
 - name: 'docker'
   id: push-image
   args:
   - push
-  - us-docker.pkg.dev/${PROJECT_ID}/pokemon/pokemon-yes
+  - ${_IMAGE}
+
+substitutions:
+  _AR_REGION: us-docker.pkg.dev
+  _AR_REPO: pokemon
+  _NAME: pokemon-no
+  _IMAGE: ${_AR_REGION}/${PROJECT_ID}/${_AR_REPO}/${_NAME}
